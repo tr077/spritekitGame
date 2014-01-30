@@ -1,3 +1,4 @@
+//Joanna Hemmingsson
 #import "ArcheryScene.h"
 #import "WelcomeScene.h"
 		
@@ -13,7 +14,6 @@
 static const uint32_t arrowCategory = 0x1 << 0;
 static const uint32_t ballCategory = 0x1 << 1;
 //kollar om man klickat sig vidare från försa scenen
-
 - (void)didMoveToView:(SKView *)view
 {
     if (!self.sceneCreated)
@@ -52,19 +52,9 @@ static const uint32_t ballCategory = 0x1 << 1;
 
         [archerFrames addObject:[archerAtlas textureNamed:texture]];
     }
-
     self.archerAnimation = archerFrames;
-
-    SKAction *releaseBalls = [SKAction sequence:@[
-         [SKAction performSelector:@selector(createBallNode) 
-                    onTarget:self],
-         [SKAction waitForDuration:1]
-    ]];
-
-    [self runAction: [SKAction repeatAction:releaseBalls 
-                               count:self.ballCount] completion:^{
-        [self gameOver];
-    }]; 
+    SKAction *releaseBalls = [SKAction sequence:@[[SKAction performSelector:@selector(createBallNode) onTarget:self],[SKAction waitForDuration:1]]];
+    [self runAction: [SKAction repeatAction:releaseBalls count:self.ballCount] completion:^{[self gameOver];}];
 }
 // när man börjar spela ska allt sättas igång
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -75,11 +65,11 @@ static const uint32_t ballCategory = 0x1 << 1;
     {
         SKAction *animate = [SKAction 
           animateWithTextures:self.archerAnimation 
-          timePerFrame: 0.05];
+          timePerFrame: 0.01];
         SKAction *shootArrow = [SKAction runBlock:^{
             SKNode *arrowNode = [self createArrowNode];
             [self addChild:arrowNode];
-            [arrowNode.physicsBody applyImpulse:CGVectorMake(35.0, 0)];
+            [arrowNode.physicsBody applyImpulse:CGVectorMake(50.0, 0)];
         }];
         SKAction *sequence = 
              [SKAction sequence:@[animate, shootArrow]];
@@ -106,17 +96,13 @@ static const uint32_t ballCategory = 0x1 << 1;
     arrow.physicsBody.collisionBitMask = arrowCategory | ballCategory;
     arrow.physicsBody.contactTestBitMask = 
                           arrowCategory | ballCategory;
-
     return arrow;
 }
 //Skapar själva kvd loggan
 - (void) createBallNode
 {
-    SKSpriteNode *ball = [[SKSpriteNode alloc] 
-        initWithImageNamed:@"kvd.png"];
-
-    ball.position = CGPointMake(randomBetween(200, self.size.width),
-                                self.size.height-50);
+    SKSpriteNode *ball = [[SKSpriteNode alloc] initWithImageNamed:@"kvd.png"];
+    ball.position = CGPointMake(randomBetween(200, self.size.width), self.size.height-50);
     ball.name = @"ballNode";
     ball.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:(ball.size.width/2)-7];
     ball.physicsBody.usesPreciseCollisionDetection = YES;
@@ -151,7 +137,7 @@ static const uint32_t ballCategory = 0x1 << 1;
             [secondNode removeFromParent];
             [self addChild:burstNode];
             self.score++;
-        }
+    }
   }
 }
 //skapar poängNoden som visar hur många poäng man fått under spelets gång
@@ -207,10 +193,8 @@ static inline CGFloat randomFloat()
 {
     return rand() / (CGFloat) RAND_MAX;
 }
-
 static inline CGFloat randomBetween(CGFloat low, CGFloat high)
 {
     return randomFloat() * (high - low) + low;
 }
-
 @end
