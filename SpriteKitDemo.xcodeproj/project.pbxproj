@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88407EE017EB455F002B0C6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88407EDF17EB455F002B0C6A /* Foundation.framework */; };
+		88407EE217EB455F002B0C6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88407EE117EB455F002B0C6A /* CoreGraphics.framework */; };
+		88407EE417EB455F002B0C6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88407EE317EB455F002B0C6A /* UIKit.framework */; };
+		88407EE617EB455F002B0C6A /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88407EE517EB455F002B0C6A /* SpriteKit.framework */; };
+		88407EEC17EB455F002B0C6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88407EEA17EB455F002B0C6A /* InfoPlist.strings */; };
+		88407EEE17EB455F002B0C6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88407EED17EB455F002B0C6A /* main.m */; };
+		88407EF217EB455F002B0C6A /* SpriteKitDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88407EF117EB455F002B0C6A /* SpriteKitDemoAppDelegate.m */; };
+		88407EF517EB455F002B0C6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88407EF317EB455F002B0C6A /* Main.storyboard */; };
+		88407EF817EB455F002B0C6A /* SpriteKitDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88407EF717EB455F002B0C6A /* SpriteKitDemoViewController.m */; };
+		88407EFF17EB455F002B0C6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88407EFE17EB455F002B0C6A /* Images.xcassets */; };
+		88407F1D17EB465B002B0C6A /* WelcomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 88407F1C17EB465B002B0C6A /* WelcomeScene.m */; };
+		88407F2017EB4680002B0C6A /* ArcheryScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 88407F1F17EB4680002B0C6A /* ArcheryScene.m */; };
+		88407F2217EB47A0002B0C6A /* archer.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 88407F2117EB47A0002B0C6A /* archer.atlas */; };
+		88407F7017EB5D36002B0C6A /* BallFragment.png in Resources */ = {isa = PBXBuildFile; fileRef = 88407F6F17EB5D36002B0C6A /* BallFragment.png */; };
+		88407F7317EB5D59002B0C6A /* BurstParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 88407F7117EB5D59002B0C6A /* BurstParticle.sks */; };
+		88407F7417EB5D59002B0C6A /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 88407F7217EB5D59002B0C6A /* spark.png */; };
+		88EFB9D3184F6F00002397E6 /* ArrowHitTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 88EFB9D0184F6F00002397E6 /* ArrowHitTexture.png */; };
+		88EFB9D4184F6F00002397E6 /* ArrowTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 88EFB9D1184F6F00002397E6 /* ArrowTexture.png */; };
+		88EFB9D5184F6F00002397E6 /* BallTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 88EFB9D2184F6F00002397E6 /* BallTexture.png */; };
+		E9FB8F26189A610900F06B70 /* kvd.png in Resources */ = {isa = PBXBuildFile; fileRef = E9FB8F25189A610900F06B70 /* kvd.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		88407EDC17EB455F002B0C6A /* SpriteKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88407EDF17EB455F002B0C6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		88407EE117EB455F002B0C6A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		88407EE317EB455F002B0C6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		88407EE517EB455F002B0C6A /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		88407EE917EB455F002B0C6A /* SpriteKitDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKitDemo-Info.plist"; sourceTree = "<group>"; };
+		88407EEB17EB455F002B0C6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		88407EED17EB455F002B0C6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88407EEF17EB455F002B0C6A /* SpriteKitDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpriteKitDemo-Prefix.pch"; sourceTree = "<group>"; };
+		88407EF017EB455F002B0C6A /* SpriteKitDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteKitDemoAppDelegate.h; sourceTree = "<group>"; };
+		88407EF117EB455F002B0C6A /* SpriteKitDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitDemoAppDelegate.m; sourceTree = "<group>"; };
+		88407EF417EB455F002B0C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88407EF617EB455F002B0C6A /* SpriteKitDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteKitDemoViewController.h; sourceTree = "<group>"; };
+		88407EF717EB455F002B0C6A /* SpriteKitDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitDemoViewController.m; sourceTree = "<group>"; };
+		88407EFE17EB455F002B0C6A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		88407F0517EB455F002B0C6A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		88407F1B17EB465B002B0C6A /* WelcomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeScene.h; path = SpriteKitDemo/WelcomeScene.h; sourceTree = "<group>"; };
+		88407F1C17EB465B002B0C6A /* WelcomeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeScene.m; path = SpriteKitDemo/WelcomeScene.m; sourceTree = "<group>"; };
+		88407F1E17EB4680002B0C6A /* ArcheryScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArcheryScene.h; path = SpriteKitDemo/ArcheryScene.h; sourceTree = "<group>"; };
+		88407F1F17EB4680002B0C6A /* ArcheryScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArcheryScene.m; path = SpriteKitDemo/ArcheryScene.m; sourceTree = "<group>"; };
+		88407F2117EB47A0002B0C6A /* archer.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = archer.atlas; sourceTree = "<group>"; };
+		88407F6F17EB5D36002B0C6A /* BallFragment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BallFragment.png; sourceTree = "<group>"; };
+		88407F7117EB5D59002B0C6A /* BurstParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BurstParticle.sks; sourceTree = "<group>"; };
+		88407F7217EB5D59002B0C6A /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		88EFB9D0184F6F00002397E6 /* ArrowHitTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowHitTexture.png; sourceTree = "<group>"; };
+		88EFB9D1184F6F00002397E6 /* ArrowTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowTexture.png; sourceTree = "<group>"; };
+		88EFB9D2184F6F00002397E6 /* BallTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BallTexture.png; sourceTree = "<group>"; };
+		E9FB8F25189A610900F06B70 /* kvd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kvd.png; path = SpriteKitDemo/kvd.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88407ED917EB455F002B0C6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88407EE217EB455F002B0C6A /* CoreGraphics.framework in Frameworks */,
+				88407EE417EB455F002B0C6A /* UIKit.framework in Frameworks */,
+				88407EE617EB455F002B0C6A /* SpriteKit.framework in Frameworks */,
+				88407EE017EB455F002B0C6A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88407ED317EB455F002B0C6A = {
+			isa = PBXGroup;
+			children = (
+				88407F1E17EB4680002B0C6A /* ArcheryScene.h */,
+				88407F1F17EB4680002B0C6A /* ArcheryScene.m */,
+				88407F7117EB5D59002B0C6A /* BurstParticle.sks */,
+				88407F7217EB5D59002B0C6A /* spark.png */,
+				E9FB8F25189A610900F06B70 /* kvd.png */,
+				88407F1B17EB465B002B0C6A /* WelcomeScene.h */,
+				88407F1C17EB465B002B0C6A /* WelcomeScene.m */,
+				88407EE717EB455F002B0C6A /* SpriteKitDemo */,
+				88407EDE17EB455F002B0C6A /* Frameworks */,
+				88407EDD17EB455F002B0C6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88407EDD17EB455F002B0C6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88407EDC17EB455F002B0C6A /* SpriteKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88407EDE17EB455F002B0C6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88407EDF17EB455F002B0C6A /* Foundation.framework */,
+				88407EE117EB455F002B0C6A /* CoreGraphics.framework */,
+				88407EE317EB455F002B0C6A /* UIKit.framework */,
+				88407EE517EB455F002B0C6A /* SpriteKit.framework */,
+				88407F0517EB455F002B0C6A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88407EE717EB455F002B0C6A /* SpriteKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				88407EF017EB455F002B0C6A /* SpriteKitDemoAppDelegate.h */,
+				88407EF117EB455F002B0C6A /* SpriteKitDemoAppDelegate.m */,
+				88407EF317EB455F002B0C6A /* Main.storyboard */,
+				88407EF617EB455F002B0C6A /* SpriteKitDemoViewController.h */,
+				88407EF717EB455F002B0C6A /* SpriteKitDemoViewController.m */,
+				88407EFE17EB455F002B0C6A /* Images.xcassets */,
+				88407EE817EB455F002B0C6A /* Supporting Files */,
+			);
+			path = SpriteKitDemo;
+			sourceTree = "<group>";
+		};
+		88407EE817EB455F002B0C6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88407F6F17EB5D36002B0C6A /* BallFragment.png */,
+				88EFB9D0184F6F00002397E6 /* ArrowHitTexture.png */,
+				88EFB9D1184F6F00002397E6 /* ArrowTexture.png */,
+				88EFB9D2184F6F00002397E6 /* BallTexture.png */,
+				88407F2117EB47A0002B0C6A /* archer.atlas */,
+				88407EE917EB455F002B0C6A /* SpriteKitDemo-Info.plist */,
+				88407EEA17EB455F002B0C6A /* InfoPlist.strings */,
+				88407EED17EB455F002B0C6A /* main.m */,
+				88407EEF17EB455F002B0C6A /* SpriteKitDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88407EDB17EB455F002B0C6A /* SpriteKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88407F1517EB455F002B0C6A /* Build configuration list for PBXNativeTarget "SpriteKitDemo" */;
+			buildPhases = (
+				88407ED817EB455F002B0C6A /* Sources */,
+				88407ED917EB455F002B0C6A /* Frameworks */,
+				88407EDA17EB455F002B0C6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpriteKitDemo;
+			productName = SpriteKitDemo;
+			productReference = 88407EDC17EB455F002B0C6A /* SpriteKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88407ED417EB455F002B0C6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SpriteKitDemo;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Neil Smyth";
+			};
+			buildConfigurationList = 88407ED717EB455F002B0C6A /* Build configuration list for PBXProject "SpriteKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88407ED317EB455F002B0C6A;
+			productRefGroup = 88407EDD17EB455F002B0C6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88407EDB17EB455F002B0C6A /* SpriteKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88407EDA17EB455F002B0C6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88EFB9D5184F6F00002397E6 /* BallTexture.png in Resources */,
+				88407F2217EB47A0002B0C6A /* archer.atlas in Resources */,
+				88407EEC17EB455F002B0C6A /* InfoPlist.strings in Resources */,
+				88407EFF17EB455F002B0C6A /* Images.xcassets in Resources */,
+				88407F7417EB5D59002B0C6A /* spark.png in Resources */,
+				88407F7017EB5D36002B0C6A /* BallFragment.png in Resources */,
+				88407F7317EB5D59002B0C6A /* BurstParticle.sks in Resources */,
+				88EFB9D4184F6F00002397E6 /* ArrowTexture.png in Resources */,
+				E9FB8F26189A610900F06B70 /* kvd.png in Resources */,
+				88407EF517EB455F002B0C6A /* Main.storyboard in Resources */,
+				88EFB9D3184F6F00002397E6 /* ArrowHitTexture.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88407ED817EB455F002B0C6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88407EEE17EB455F002B0C6A /* main.m in Sources */,
+				88407EF817EB455F002B0C6A /* SpriteKitDemoViewController.m in Sources */,
+				88407F2017EB4680002B0C6A /* ArcheryScene.m in Sources */,
+				88407EF217EB455F002B0C6A /* SpriteKitDemoAppDelegate.m in Sources */,
+				88407F1D17EB465B002B0C6A /* WelcomeScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88407EEA17EB455F002B0C6A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88407EEB17EB455F002B0C6A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		88407EF317EB455F002B0C6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88407EF417EB455F002B0C6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88407F1317EB455F002B0C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		88407F1417EB455F002B0C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88407F1617EB455F002B0C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKitDemo/SpriteKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKitDemo/SpriteKitDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		88407F1717EB455F002B0C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKitDemo/SpriteKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKitDemo/SpriteKitDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88407ED717EB455F002B0C6A /* Build configuration list for PBXProject "SpriteKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88407F1317EB455F002B0C6A /* Debug */,
+				88407F1417EB455F002B0C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88407F1517EB455F002B0C6A /* Build configuration list for PBXNativeTarget "SpriteKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88407F1617EB455F002B0C6A /* Debug */,
+				88407F1717EB455F002B0C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88407ED417EB455F002B0C6A /* Project object */;
+}
